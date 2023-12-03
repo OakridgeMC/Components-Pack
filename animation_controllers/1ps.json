@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.1ps": {
+            "initial_state": "stop",
+            "states": {
+                "stop": {
+                    "transitions": [
+                        {
+                            "start": "query.is_sleeping"
+                        }
+                    ]
+                },
+                "start": {
+                    "animations": [
+                        "start_1ps"
+                    ],
+                    "transitions": [
+                        {
+                            "stop": "!query.is_sleeping"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

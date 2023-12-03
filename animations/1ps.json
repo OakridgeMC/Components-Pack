@@ -1,0 +1,20 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.start_1ps": {
+            "loop": false,
+            "animation_length": 5.0,
+            "timeline": {
+                "0.0": "/me \u00c2\u00a7ewent to bed. Sweet dreams.",
+                "4.9": [
+                    "/weather rain",
+                    "/title @s actionbar \u00c2\u00a7eGood Morning!"
+                ],
+                "5.0": [
+                    "/toggledownfall",
+                    "/time set 23992"
+                ]
+            }
+        }
+    }
+}

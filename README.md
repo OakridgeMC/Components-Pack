@@ -1,5 +1,6 @@
 # 1PS-and-More
-One Player Sleep system and Death Counter Scoreboard addon for Minecraft Bedrock
+One Player Sleep system and Death Counter Scoreboard addon for Minecraft Bedrock.
+Credit to RavinMadHatter for the death counter scoreboard system.
 
 This includes any utilities that include the Player.Json file; other uses may be added in the future.
 
