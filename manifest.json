@@ -1,27 +1,27 @@
 {
     "format_version": 2,
     "header": {
-        "description": "Multiplayer compatible one-player sleep v2.2 by AvgZing, death counter addition by RavinMaddHatter.",
-        "name": "AvgZing 1-Player Sleep + Death Counter",
-        "uuid": "107c45e9-0e6a-465a-83a7-3203229ab807",
+        "description": "1PS v3.5.1 by AvgZing, death counter by RavinMaddHatter, AFK Display by DrAv",
+        "name": "BoxOfDevs 1PS, Death, AFK Display",
+        "uuid": "264e9d43-1567-44f3-933b-34530492955a",
         "version": [
-            2,
-            2,
+            3,
+            5,
             1
         ],
         "min_engine_version": [
             1,
-            18,
-            10
+            21,
+            0
         ]
     },
     "modules": [
         {
             "type": "data",
-            "uuid": "851782bb-5b70-41cd-bb34-6e198304afd3",
+            "uuid": "a87781ae-a30d-45f0-b83a-6f775ad4e44f",
             "version": [
-                2,
-                2,
+                3,
+                5,
                 1
             ]
         }

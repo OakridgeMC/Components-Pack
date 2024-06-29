@@ -1,7 +1,7 @@
 {
     "format_version": "1.10.0",
     "animation_controllers": {
-        "controller.animation.death_counter_j5cfmnkccwt7ppim3lsyue": {
+        "controller.animation.death_counter": {
             "initial_state": "alive",
             "states": {
                 "alive": {
@@ -11,7 +11,7 @@
                         }
                     ],
                     "on_exit": [
-                        "/scoreboard players add @s deaths_J5CfmnKCc 1"
+                        "/scoreboard players add @s deaths 1"
                     ]
                 },
                 "dead": {
