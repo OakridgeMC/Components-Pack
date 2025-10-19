@@ -6,8 +6,6 @@
       "animation_length": 1.0,
       "timeline": {
         "0.0": [
-          "/scoreboard objectives add afk_time dummy",
-          "/scoreboard objectives add afk_display dummy \"§7Player AFK\"",
           "/scoreboard objectives setdisplay belowname afk_display",
           "/scoreboard players add @s afk_time 1",
           "/scoreboard players reset * afk_display",

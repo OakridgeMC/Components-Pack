@@ -3,11 +3,11 @@
     "animations": {
         "animation.start_1ps": {
             "loop": false,
-            "animation_length": 5.0,
+            "animation_length": 3.0,
             "timeline": {
               "0.0": ["/gamerule playersSleepingPercentage 0", "/me §ewent to bed. Sweet dreams."],
-              "4.9": ["/weather rain", "/title @s actionbar §eGood Morning!"],
-              "5.0": ["/toggledownfall"]
+              "2.9": ["/weather rain", "/title @s actionbar §eGood Morning!"],
+              "3.0": ["/toggledownfall"]
             }
         }
     }
