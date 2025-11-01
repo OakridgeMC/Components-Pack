@@ -1,5 +1,11 @@
 import * as mc from "@minecraft/server";
-import { system, world, ItemStack } from "@minecraft/server";
+import {
+  system,
+  world,
+  ItemStack,
+  CommandPermissionLevel,
+  CustomCommandStatus,
+} from "@minecraft/server";
 
 mc.world.beforeEvents.playerBreakBlock.subscribe((data) => {
   const block = data.block;
@@ -27,3 +33,26 @@ system.runInterval(() => {
       player.runCommand(`title @s actionbar Biome: §e${biomeID}`);
   }
 }, 40);
+
+system.beforeEvents.startup.subscribe(({ customCommandRegistry }) => {
+    customCommandRegistry.registerCommand(
+        {
+            name: "comp:tospawn",
+            description: "Teleport to spawn at 0, 100, 0.",
+            permissionLevel: CommandPermissionLevel.Any,
+            cheatsRequired: false
+        },
+        (origin) => {
+            if (!origin.sourceEntity) return {
+                status: CustomCommandStatus.Failure,
+            };
+            system.run(() => {
+                origin.sourceEntity.teleport({x: 0, y: 100, z: 0});
+            });
+            return {
+                status: CustomCommandStatus.Success,
+                message: "Teleporting to Spawn...",
+            }
+        }
+    );
+});
