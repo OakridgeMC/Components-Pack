@@ -5,6 +5,7 @@ import {
   ItemStack,
   CommandPermissionLevel,
   CustomCommandStatus,
+  GameMode
 } from "@minecraft/server";
 
 mc.world.beforeEvents.playerBreakBlock.subscribe((data) => {
@@ -35,24 +36,112 @@ system.runInterval(() => {
 }, 40);
 
 system.beforeEvents.startup.subscribe(({ customCommandRegistry }) => {
-    customCommandRegistry.registerCommand(
-        {
-            name: "comp:tospawn",
-            description: "Teleport to spawn at 0, 100, 0.",
-            permissionLevel: CommandPermissionLevel.Any,
-            cheatsRequired: false
-        },
-        (origin) => {
-            if (!origin.sourceEntity) return {
-                status: CustomCommandStatus.Failure,
-            };
-            system.run(() => {
-                origin.sourceEntity.teleport({x: 0, y: 100, z: 0});
-            });
-            return {
-                status: CustomCommandStatus.Success,
-                message: "Teleporting to Spawn...",
-            }
-        }
-    );
+  customCommandRegistry.registerCommand(
+    {
+      name: "comp:tospawn",
+      description: "Teleport to spawn at 0, 100, 0.",
+      permissionLevel: CommandPermissionLevel.Any,
+      cheatsRequired: false,
+    },
+    (origin) => {
+      if (!origin.sourceEntity)
+        return {
+          status: CustomCommandStatus.Failure,
+        };
+      system.run(() => {
+        origin.sourceEntity.teleport(
+          { x: 0, y: 100, z: 0 },
+          { dimension: world.getDimension("overworld") }
+        );
+      });
+      return {
+        status: CustomCommandStatus.Success,
+        message: "Teleporting to Spawn...",
+      };
+    }
+  );
+  customCommandRegistry.registerCommand(
+    {
+      name: "comp:survival",
+      description: "Sets gamemode to survival",
+      permissionLevel: CommandPermissionLevel.Any,
+      cheatsRequired: false,
+    },
+    (origin) => {
+      if (!origin.sourceEntity)
+        return {
+          status: CustomCommandStatus.Failure,
+        };
+      system.run(() => {
+        origin.sourceEntity.setGameMode(GameMode.Survival);
+      });
+      return {
+        status: CustomCommandStatus.Success,
+        message: "Gamemode has been set to Survival.",
+      };
+    }
+  );
+  customCommandRegistry.registerCommand(
+    {
+      name: "comp:gms",
+      description: "Sets gamemode to survival",
+      permissionLevel: CommandPermissionLevel.Any,
+      cheatsRequired: false,
+    },
+    (origin) => {
+      if (!origin.sourceEntity)
+        return {
+          status: CustomCommandStatus.Failure,
+        };
+      system.run(() => {
+        origin.sourceEntity.setGameMode(GameMode.Survival);
+      });
+      return {
+        status: CustomCommandStatus.Success,
+        message: "Gamemode has been set to Survival.",
+      };
+    }
+  );
+  customCommandRegistry.registerCommand(
+    {
+      name: "comp:spectator",
+      description: "Sets gamemode to spectator",
+      permissionLevel: CommandPermissionLevel.Any,
+      cheatsRequired: false,
+    },
+    (origin) => {
+      if (!origin.sourceEntity)
+        return {
+          status: CustomCommandStatus.Failure,
+        };
+      system.run(() => {
+        origin.sourceEntity.setGameMode(GameMode.Spectator);
+      });
+      return {
+        status: CustomCommandStatus.Success,
+        message: "Gamemode has been set to Spectator.",
+      };
+    }
+  );
+  customCommandRegistry.registerCommand(
+    {
+      name: "comp:gmsp",
+      description: "Sets gamemode to spectator",
+      permissionLevel: CommandPermissionLevel.Any,
+      cheatsRequired: false,
+    },
+    (origin) => {
+      if (!origin.sourceEntity)
+        return {
+          status: CustomCommandStatus.Failure,
+        };
+      system.run(() => {
+        origin.sourceEntity.setGameMode(GameMode.Spectator);
+      });
+      return {
+        status: CustomCommandStatus.Success,
+        message: "Gamemode has been set to Spectator.",
+      };
+    }
+  );
 });
