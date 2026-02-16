@@ -5,7 +5,8 @@ Combined pack using player.json, including:
 3. Biome display (when a compass is held in hand)
 4. Mob spawners and budding amethyst will drop when broken
 5. /tospawn Command (Teleports players to 0, 100, 0 in the overworld on-run)
-6. /gms and /survival commands (Sets players to survival gamemode); /gmsp and /spectator commands (Sets players to spectator gamemode)
+6. /gms and /survival commands (Sets players to survival gamemode); /gmsp and /spectator commands (Sets players to spectator gamemode). Plus OP-only /gmc and /creative commands.
 7. Death Counter Scoreboard (Scoreboard ID "deaths"), originally by RavinMadHatter
 8. AFK Display (Sets players to AFK after 5 minutes, scoreboard ID afk_display), originally by DrAv
+9. Ding! sound when a player hits another entity with an arrow or firework rocket from a bow or crossbow.
 #### Please note: When you add this addon for the first time, you must run "/function initialize" to add the scoreboards. This addon does not disable achievements.
