@@ -1,23 +1,23 @@
 {
   "format_version": 2,
   "header": {
-    "description": "Components pack by AvgZing for use on the Oakridge: Survival Unhinged realm. Includes biome display with held compass, droppable mob spawners/budding amethyst, 1 Player Sleep, hours played counter, /tospawn command, /survival /gms /spectator /gmsp commands, death counter (by RavinMaddHatter), AFK Display (by DrAv).",
-    "name": "AvgZing-Oakridge Components Pack §8(2.3.0)",
-    "uuid": "fbaf0c3d-ea95-4f0b-bf73-af6ccea721ca",
-    "version": [2, 3, 0],
-    "min_engine_version": [1, 21, 120]
+    "description": "Components pack by AvgZing for Oakridge: Survival Unhinged. Includes biome & rider speed display with held compass, droppable spawners/budding amethyst, 1 Player Sleep, hours counter, /tospawn, /survival /gms /spectator /gmsp, death counter (by RavinMaddHatter), AFK Display (by DrAv).",
+    "name": "AvgZing-Oakridge Components Pack §8(2.4.0)",
+    "uuid": "37b47ae2-e02b-453c-8a66-f943a2ff5176",
+    "version": [2, 4, 0],
+    "min_engine_version": [1, 21, 130]
   },
   "modules": [
     {
       "type": "data",
-      "uuid": "89d2e83d-2fa5-4789-bc11-01083b790b83",
-      "version": [2, 3, 0]
+      "uuid": "b0054f75-57a8-4e19-9a84-3883de1058a0",
+      "version": [2, 4, 0]
     },
     {
       "type": "script",
       "language": "javascript",
-      "uuid": "4c273861-3c3d-4023-93d1-592e9747e460",
-      "version": [2, 3, 0],
+      "uuid": "70e754b9-f353-49f2-9305-3637e107d8a7",
+      "version": [2, 4, 0],
       "entry": "scripts/main.js"
     }
   ],
