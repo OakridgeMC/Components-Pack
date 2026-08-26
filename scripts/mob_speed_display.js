@@ -30,10 +30,10 @@ system.runInterval(() => {
 }, 4);
 
 function getSpeedColor(speed) {
-  if (speed < 4) return "§a";
-  if (speed < 6) return "§2";
-  if (speed < 8) return "§e";
-  if (speed < 10) return "§6";
-  if (speed < 12) return "§c";
-  return "§d";
+  if (speed < 6) return "§c";
+  if (speed < 8) return "§6";
+  if (speed < 10) return "§e";
+  if (speed < 12) return "§2";
+  if (speed < 14) return "§a";
+  return "§q";
 }
