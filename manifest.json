@@ -3,21 +3,21 @@
   "header": {
     "description": "Components pack by AvgZing for Oakridge: Survival Unhinged. Includes biome & rider speed display with held compass, droppable spawners/budding amethyst, 1 Player Sleep, hours counter, /tospawn, /survival /gms /spectator /gmsp, death counter (by RavinMaddHatter), AFK Display (by DrAv).",
     "name": "AvgZing-Oakridge Components Pack §8(2.4.0)",
-    "uuid": "37b47ae2-e02b-453c-8a66-f943a2ff5176",
-    "version": [2, 4, 0],
+    "uuid": "9639e96b-dfa7-43c8-a1f4-2c5af572759b",
+    "version": [2, 4, 1],
     "min_engine_version": [1, 21, 130]
   },
   "modules": [
     {
       "type": "data",
-      "uuid": "b0054f75-57a8-4e19-9a84-3883de1058a0",
-      "version": [2, 4, 0]
+      "uuid": "77814d92-848c-43f7-ade2-717eef0ba2b6",
+      "version": [2, 4, 1]
     },
     {
       "type": "script",
       "language": "javascript",
-      "uuid": "70e754b9-f353-49f2-9305-3637e107d8a7",
-      "version": [2, 4, 0],
+      "uuid": "49981389-db53-4235-95cf-6bcdea965592",
+      "version": [2, 4, 1],
       "entry": "scripts/main.js"
     }
   ],
